@@ -3,34 +3,24 @@ import { Link } from 'react-router-dom';
 import { style } from '../style';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
-
+import axios from 'axios'
 
 const Navbar = () => {
   const [active, setActive] = useState(' ');
   const [toggle, setToggle] = useState(false);
   const [ipAddress, setIpAddress] = useState([]);
   // Add logic to take user's ip, mac, and other details  
-  const fetchData = async () => {
-    try{
-      fetch(`${process.env.REACT_APP_BASE_URL}/api/user-details`)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok ' + response.statusText);
-        }
-        return response.json();
-      })
-      .then(data => {
-        console.log('User details:', data);
-        // Process the user details as needed
-      })
-    }
-    catch(e){
-      console.log(e)
-    }
+  const fetchData = () => {
+    // try{
+     axios.get(`http://44.220.150.231/api/user-details`)
+    // }
+    // catch(e){
+      // console.log(e)
+    // }
   }
   useEffect(() => {
     fetchData();  
-  }, []);
+  },[]);
   
 
   return (
