@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-site-verification" content="DbLUJBVL5cl1pySeEVnPdE291euBh05n9PonIT36Rf4" />
+    <meta name="description" content="Purav Shah's Portfolio showcasing projects, skills, and expertise in web development, software engineering, and design. Explore Purav Shah's work and achievements in technology." />
+    <meta name="keywords" content="Purav Shah, Purav Shah Portfolio, Web Developer, Software Engineer, Designer, Portfolio Website" />
+    <meta name="author" content="Purav Shah" />
+    <meta name="robots" content="index, follow">
+    <title>Purav Shah - Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  
+    <script type="module" src="/src/main.jsx"></script>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script>
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove", function(e) {
+        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;"
+      });
+    </script>
+  </body>
+</html>
