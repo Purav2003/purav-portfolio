@@ -10,11 +10,28 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [ipAddress, setIpAddress] = useState([]);
   // Add logic to take user's ip, mac, and other details  
+  const fetchData = async () => {
+    try{
+      fetch(`${process.env.REACT_APP_BASE_URL}/api/user-details`)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('User details:', data);
+        // Process the user details as needed
+      })
+    }
+    catch(e){
+      console.log(e)
+    }
+  }
   useEffect(() => {
-    fetch(`${process.env.REACT_BASE_URL}/api/user-details`)
-      .then(response => response.json())
-      .catch(error => console.error('Error fetching IP address:', error));
+    fetchData();  
   }, []);
+  
 
   return (
     <nav className={`${style.paddingX} w-full flex item-center py-5 fixed top-0 z-20 bg-primary`}>

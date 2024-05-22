@@ -3,11 +3,10 @@ const express = require('express');
 const cors = require('cors');
 const os = require('os');
 const axios = require('axios');
-const connectDB = require("./connectDB")
+const connectDB = require("./connectDb")
 const User = require("./userModel")
 
 const app = express();
-const PORT = 5000;
 
 app.use(cors());
 
