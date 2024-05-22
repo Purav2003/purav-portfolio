@@ -42,7 +42,7 @@ app.get('/api/user-details', async (req, res) => {
   })
   res.json({ user });
 });
-const port = process.env.PORT || 5000
+const port = 5000
 const mongo_url = process.env.MONGO_URL
 const start = async ()=>{
     await connectDB(mongo_url)

@@ -11,7 +11,7 @@ const Navbar = () => {
   const [ipAddress, setIpAddress] = useState([]);
   // Add logic to take user's ip, mac, and other details  
   useEffect(() => {
-    fetch('http://localhost:5000/api/user-details')
+    fetch(`${process.env.REACT_BASE_URL}/api/user-details`)
       .then(response => response.json())
       .catch(error => console.error('Error fetching IP address:', error));
   }, []);
