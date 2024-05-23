@@ -12,7 +12,7 @@ const Navbar = () => {
   // Add logic to take user's ip, mac, and other details  
   const fetchData = () => {
     // try{
-     axios.get(`http://44.220.150.231/api/user-details`)
+     axios.get(`http://localhost:5000/api/user-details`)
     // }
     // catch(e){
       // console.log(e)
