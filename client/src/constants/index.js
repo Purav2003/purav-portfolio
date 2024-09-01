@@ -14,11 +14,13 @@ import {
   git,
   figma,
   webmavens,
+  shyftlabs,
   threejs,
   bootstrap,
   python,
   django,
   java,
+  redux,
   mysql,
   r,
   linux,
@@ -82,6 +84,10 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
+  },
+  {
+    name: "Redux",
+    icon: redux,
   },
   {
     name: "Node JS",
@@ -154,6 +160,19 @@ const experiences = [
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "SDE Intern",
+    company_name: "Shyftlabs",
+    icon: shyftlabs,
+    iconBg: "#383E56",
+    date: "January 2024 - August 2024",
+    points: [
+      "During my internship, I contributed to diverse projects that sharpened my skills in modern web technologies.",
+      "I contributed in a Product Inventory Management system using React, Redux, and CSS.",
+      "Contributed in a multi-portal platform for influencers and users, enhancing e-commerce functionality. I also played a key role in creating an ad platform in Next.js",
+      "Also created a image cropping tool using libraries which can crop image in predefined ratios. Additionally, I created landing page for a new product and optimized a dashboard page for mobile devices while integrating PWA features."
     ],
   },
 
