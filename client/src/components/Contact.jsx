@@ -79,7 +79,7 @@ const Contact = () => {
             <a className="rounded-full p-3 bg-primary h-[50px] w-[50px] hover:bg-[#171515]" href="https://github.com/Purav2003" target='_blank'><icons.BiLogoGithub style={{ fontSize: '25px' }} /></a>
             <a className="rounded-full p-3 bg-primary h-[50px] w-[50px] hover:text-[#ec6a20] hover:bg-white" href="https://www.credly.com/users/purav-shah.75a00201/badges"  target='_blank'><icons_a.SiCredly style={{ fontSize: '30px' }} /></a>
             <a className="rounded-full p-3 bg-primary h-[50px] w-[50px]" role="button" title='Download Resume' target='_blank'
-            href='https://drive.google.com/file/d/1RyviqyIDXM3eX3InaWOFybfwIk6mbOtn/view?usp=sharing'><icon.AiOutlineDownload style={{ fontSize: '25px' }} /></a>
+            href='https://drive.google.com/file/d/1CuMGm5gq37Lu-GzYicZOWGv5gDhlvM69/view?usp=drive_link'><icon.AiOutlineDownload style={{ fontSize: '25px' }} /></a>
           </div>
         </form>
       </motion.div>
