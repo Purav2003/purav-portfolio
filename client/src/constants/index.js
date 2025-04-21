@@ -153,7 +153,7 @@ const experiences = [
   {
     title: "Frontend Developer",
     company_name: "Web Mavens",
-    icon: freelancer,
+    icon: webmavens,
     iconBg: "#383E56",
     date: "April 2022 - June 2022",
     points: [
